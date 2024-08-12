@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rounded-left {
+    border-top-left-radius: 9999px; /* Fully rounded */
+    border-bottom-left-radius: 9999px; /* Fully rounded */
+    /* Optionally adjust the right side if needed */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .rounded-right {
+    border-top-right-radius: 9999px; /* Fully rounded top right corner */
+    border-bottom-right-radius: 9999px; /* Fully rounded bottom right corner */
+    /* Optionally adjust the left side if needed */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /*1*/
+
+ input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
+}
+  
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}

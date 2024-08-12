@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Home Page</title>
+    <title>Youtube_Home_Page2</title>
     <link rel="stylesheet" href="css/tailwind.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+</head>
+<body class="bg-black text-white">
+<!-- nab bar start  -->
+<nav>
+    <div class="container  px-4 py-2 flex justify-between items-center w-[100%] ">
+         <!-- menu bar and logo  -->
+        <div class="menu-icon ">
+            <i class="fa-solid fa-bars fa-xl mr-4"></i>
+            <i class="fa-brands fa-youtube fa-xl text-red-600	"></i>
+        </div>
+          <!-- menu bar and logo end -->
+        <!-- search area  -->
+        <div class="scarch-bar  border-green-500 flex w-[45%]	">
+            <div class="input-div  w-[95%] flex">
+               <div id="prnDev" class="border pl-5 border-[#3f3e3e] flex w-[90%] rounded-left bg-[#121212]">
+                <button id="targetElement" class="hidden px-3  bg-[#121212] px-4 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" id="myInput" class="w-full  py-2  bg-[#121212] focus:bg-[#121212]  pl-4 pr-1  outline-none " placeholder="search" >
+               </div>
+                <button type="submit" class="rounded-right bg-[#282828] px-6 border border-[#3f3e3e]"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="ml-5 bg-[#282828] text-white px-4 rounded-full
+
+            "><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <!-- search area  end-->
+        <!-- notification area  -->
+        <div class="ntf-stn   border-blue-500 ">
+            <button><i class="fa-solid fa-video fa-xl"></i> </button>
+            <button><i class="fa-regular fa-bell  fa-xl px-4"></i></button>
+            <button><i class="fa-regular fa-user fa-xl"></i></button>
+        </div>
+        <!-- notification area end -->
+    </div>
+</nav>
+<!-- nab bar end -->
+
+<script src="script/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
