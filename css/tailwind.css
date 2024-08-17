@@ -23,9 +23,83 @@
   -webkit-text-fill-color: white !important;
 }
   
-input:-webkit-autofill,
+ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
+/*::-webkit-scrollbar-thumb {
+  background-color: #ce1d1d; /* Background color of the scrollbar thumb */
+ /* border-radius: 10px;*/ /* Optional: Rounded corners of the scrollbar thumb */
+ */
+
+
+
+
+/* hide scroll bar  */
+/* Styling the entire scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+}
+
+/* Styling the scrollbar track */
+.sidebar::-webkit-scrollbar-track {
+  background: black; /* Background color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Styling the scrollbar thumb */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #6b6666; /* Color of the scroll thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  width: 
+}
+
+/* Styling the scrollbar thumb on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #332d2d; /* Darker color of the scroll thumb when hovered */
+}
+/* button design  */
+
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+  
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+/* hide every time but when hober then show its self  */
+.sidebar::-webkit-scrollbar{
+  /* display: none; */
+  /* display:flex; */
+  /* width: 10px; */
+  display: none;
+ 
+ 
+}
+.sidebar:hover::-webkit-scrollbar{
+  display: block;
+}
+
+
