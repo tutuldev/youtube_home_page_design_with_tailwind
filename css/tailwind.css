@@ -29,81 +29,15 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
-/*::-webkit-scrollbar-thumb {
-  background-color: #ce1d1d; /* Background color of the scrollbar thumb */
- /* border-radius: 10px;*/ /* Optional: Rounded corners of the scrollbar thumb */
- 
-
-
-
 
 /* hide scroll bar  */
-/* Styling the entire scrollbar */
-.sidebar::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-  height: 12px; /* Height for horizontal scrollbar */
-  display: none;
+
+#slideBar{
+  scrollbar-color: black black;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  transition: all 0.5s;
 }
-.sidebar:hover::-webkit-scrollbar {
-display: block;
-  /* width: 10px; */
+#slideBar:hover{
+  scrollbar-color: gray black;
 }
-
-/* Styling the scrollbar track */
-.sidebar::-webkit-scrollbar-track {
-  background: rgb(231, 226, 226); /* Background color of the track */
-  border-radius: 0px; /* Rounded corners for the track */
- 
-}
-
-/* Styling the scrollbar thumb */
-.sidebar::-webkit-scrollbar-thumb {
-  background: #a7a4a4; /* Color of the scroll thumb */
-  border-radius: 0px; /* Rounded corners for the thumb */
-  
-  
-}
-
-/* Styling the scrollbar thumb on hover */
-.sidebar::-webkit-scrollbar-thumb:hover {
-  background: rgb(78, 76, 76); /* Darker color of the scroll thumb when hovered */
-}
-
-
-
-
-
-
-
-
-/* button design  */
-
-.sidebar::-webkit-scrollbar-button:single-button {
-  background-color: #bbbbbb;
-  display: block;
-  border-style: solid;
-  height: 13px;
-  width: 16px;
-}
-/* Up */
-.sidebar::-webkit-scrollbar-button:single-button:vertical:decrement {
-  border-width: 0 8px 8px 8px;
-  border-color: transparent transparent #555555 transparent;
-  
-}
-
-.sidebar::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: transparent transparent #777777 transparent;
-}
-/* Down */
-.sidebar::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 8px 8px 0 8px;
-  border-color: #555555 transparent transparent transparent;
-}
-
-.sidebar::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-  border-color: #777777 transparent transparent transparent;
-}
-
-
-
