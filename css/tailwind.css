@@ -32,12 +32,23 @@ input:-webkit-autofill:active {
 
 /* hide scroll bar  */
 
-#slideBar{
+#sideBar{
   scrollbar-color: black black;
   scrollbar-width: thin;
   scrollbar-gutter: stable;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
-#slideBar:hover{
+#sideBar:hover{
   scrollbar-color: gray black;
+  
 }
+#exAllSidNav{
+  scrollbar-color: black black;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+#exAllSidNav:hover{
+  scrollbar-color: gray black;
+
+}
+
